@@ -4,4 +4,5 @@ spring:
 
   cloud:
     config:
-      uri: http://localhost:8080
+      enabled: true
+      uri: http://localhost:8081
