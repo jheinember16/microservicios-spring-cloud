@@ -1,13 +1,7 @@
-server.port=8081
-spring.application.name=usuario-service
-spring.datasource.url=jdbc:postgresql://localhost:5432/usuarios
-spring.datasource.username=postgres
-spring.datasource.password=1234
+spring:
+  application:
+    name: usuario-service
 
-spring.datasource.driver-class-name=org.postgresql.Driver
-spring.jpa.hibernate.ddl-auto=update  
-spring.jpa.show-sql=true
-
-logging.level.org.hibernate.SQL=DEBUG
-logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
-
+  cloud:
+    config:
+      uri: http://localhost:8080

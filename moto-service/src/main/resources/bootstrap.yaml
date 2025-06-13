@@ -1,12 +1,7 @@
-server.port=8083
-spring.application.name=carro-service
-spring.datasource.url=jdbc:postgresql://localhost:5432/moto
-spring.datasource.username=postgres
-spring.datasource.password=1234
+spring:
+  application:
+    name: moto-service
 
-spring.datasource.driver-class-name=org.postgresql.Driver
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
-logging.level.org.hibernate.SQL=DEBUG
-logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+  cloud:
+    config:
+      uri: http://localhost:8080
